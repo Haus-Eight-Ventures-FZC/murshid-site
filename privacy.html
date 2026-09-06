@@ -17,7 +17,7 @@
   </header>
 
   <h1>Privacy Policy</h1>
-  <p class="when">Last updated 3 September 2026</p>
+  <p class="when">Last updated 6 September 2026</p>
 
   <p>Murshid is a personal companion app made by Haus Eight Ventures FZC ("Haus 8", "we"), based in the United Arab Emirates. This page says, in plain words, what the app keeps, where it keeps it, and what leaves your phone. If anything here stops being true, we change the app or we change this page, and we do not let the two drift apart.</p>
 
@@ -27,6 +27,7 @@
     <li>You can use the app without an account. An account exists only so a backup can follow you to a new phone.</li>
     <li>The backup is encrypted on your phone before it is uploaded. Our server stores it but cannot read it.</li>
     <li>We do not run ads, we do not sell data, and we do not use analytics trackers.</li>
+    <li>Sorting notes into cards uses a free language model in the cloud. It is off until you turn it on, and then one note at a time goes, never the whole record. The companies running those free models may train on what they receive.</li>
     <li>You can delete your account and your backup from inside the app, at any time, and it is gone.</li>
   </ul>
 
@@ -47,11 +48,18 @@
     <li>We do not show advertising, in the app or anywhere else.</li>
     <li>We do not sell, rent or share your data with anyone for their own use.</li>
     <li>We do not include analytics or tracking software in the app.</li>
-    <li>We do not send what you write to any artificial intelligence service. Should that ever change, this page will say so first, in detail, and it will be your choice.</li>
+    <li>We do not send what you write to any artificial intelligence service unless you turn sorting on, described just below. It is off until you choose it.</li>
   </ul>
 
+  <h2>Sorting your notes, if you choose it</h2>
+  <p>The app can turn a note into cards: a thing to do, an expense, a meeting, a plan. To do that it needs a language model bigger than the phone can hold, so it sends the one note you just wrote, with the date, to OpenRouter, a service that passes it to a model provider and returns the sorted answer. The same happens when you ask for a summary or the minutes of a meeting: that one card goes, and the answer comes back.</p>
+  <p>This is off until you switch it on, in your own settings inside the app, and the switch says in plain words what it does. With it off, nothing you write leaves the phone and the app simply keeps notes as notes.</p>
+  <p>What goes is one note or one card at a time. Never your whole record, never another day's notes, never anything the app has flagged as a moment of crisis, which stays on the phone no matter what the switch says. The note travels from your phone to OpenRouter over an encrypted connection, and no server of ours keeps a copy of it. We do not attach your name, your email or your account to it.</p>
+  <p>We use the free models on OpenRouter, and this is the part to read twice. The companies that run those free models may keep what they are sent and use it to train their models. That is the price of free, and we are a small company on a small budget, so we would rather say it here than hide it in a setting. If that is not a trade you want to make, leave sorting off and the app works exactly the same, with your notes kept as notes.</p>
+  <p>OpenRouter's own <a href="https://openrouter.ai/privacy">privacy policy</a> governs what it does with a request while it handles it.</p>
+
   <h2>Who can see your data</h2>
-  <p>You, on your phone. The only other party that holds anything is Supabase, as our hosting provider, and what it holds is your email address and an encrypted file it cannot read. Sign-in providers (Google, GitHub) see only that you signed in to Murshid through them, under their own privacy policies.</p>
+  <p>You, on your phone. The only other party that always holds anything is Supabase, as our hosting provider, and what it holds is your email address and an encrypted file it cannot read. If you turn sorting on, OpenRouter and the model provider it chooses see one note at a time while they answer it, as described above. Sign-in providers (Google, GitHub) see only that you signed in to Murshid through them, under their own privacy policies.</p>
 
   <h2>Deleting your data</h2>
   <p>Inside the app, your account settings include a delete option. It removes your account and your encrypted backup from our server, and can also wipe the app's data from the phone. Once done, there is no copy we can restore. If you cannot reach the app, follow the steps on the <a href="data-deletion.html">data deletion page</a> and we will do it for you.</p>
